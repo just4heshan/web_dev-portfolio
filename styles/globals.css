@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply w-full h-screen text-[#ffffff] bg-black   
+    @apply w-full h-screen text-[#ffffff] bg-black scrollbar-hide  
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -26,7 +26,7 @@
 
 
   button {
-    @apply shadow-xl shadow-[#343a40] rounded-xl uppercase bg-gradient-to-tr from-[#845ec2] from-[#d65db1] from-[#ff6f91] to-[#ff9671] to-[#ffc75f] to-[#f9f871] text-white font-bold px-2 py-2 border-0
+    @apply z-50 shadow-xl shadow-[#343a40] rounded-md uppercase text-white font-semibold px-7 py-4 border-0
   }
 
 }

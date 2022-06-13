@@ -16,21 +16,21 @@ const Navbar = () => {
           style={{ width: 60, height: 60 }}
           className="cursor-pointer"
         />
-        <ul className="flex justify-center items-center z-50">
-          <Link href="/">
-            <li className="ml-7 text-sm uppercase hover:border-b">Home</li>
+        <ul className="py-10 flex justify-center items-center  tracking-widest z-50">
+          <Link exact href="/">
+            <li className="ml-7 px-[3px] py-[2px] text-sm uppercase hover:border-b rounded-[40px] hover:border-x-2 transition-all duration-300">Home</li>
           </Link>
-          <Link href="#about">
-            <li className="ml-7 text-sm uppercase hover:border-b">About</li>
+          <Link href="/#about">
+            <li className="ml-7 px-[3px] py-[2px] text-sm uppercase hover:border-b rounded-[40px] hover:border-x-2 transition-all duration-300">About</li>
           </Link>
-          <Link href="#skills">
-            <li className="ml-7 text-sm uppercase hover:border-b">Skills</li>
+          <Link href="/#skills">
+            <li className="ml-7 px-[3px] py-[2px] text-sm uppercase hover:border-b rounded-[40px] hover:border-x-2 transition-all duration-300">Skills</li>
           </Link>
-          <Link href="/">
-            <li className="ml-7 text-sm uppercase hover:border-b">Works</li>
+          <Link href="/#works">
+            <li className="ml-7 px-[3px] py-[2px] text-sm uppercase hover:border-b rounded-[40px] hover:border-x-2 transition-all duration-300">Works</li>
           </Link>
-          <Link href="/">
-            <li className="ml-7 text-sm uppercase hover:border-b">Contact</li>
+          <Link href="/#contact">
+            <li className="ml-7 px-[3px] py-[2px] text-sm uppercase hover:border-b rounded-[40px] hover:border-x-2 transition-all duration-300">Contact</li>
           </Link>
         </ul>
       </div>

@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply w-full h-screen text-[#ffffff] bg-black scrollbar-hide  
+    @apply w-full h-screen text-[#ffffff] bg-black scrollbar-hide overflow-x-hidden 
   }
 
   h1, h2, h3, h4, h5, h6 {

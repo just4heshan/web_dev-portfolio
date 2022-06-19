@@ -9,7 +9,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-light
   }
 
   h1 {
@@ -20,13 +20,29 @@
     @apply text-3xl sm:text-4xl
   }
 
+  h3 {
+    @apply text-2xl sm:text-3xl
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl
+  }
+
+  h5 {
+    @apply text-lg sm:text-xl
+  }
+
+  h6 {
+    @apply text-sm sm:text-lg
+  }
+
   li {
     @apply list-none cursor-pointer
   }
 
 
   button {
-    @apply z-50 shadow-xl shadow-[#343a40] rounded-md uppercase text-white font-semibold px-7 py-4 border-0
+    @apply flex items-center shadow-xl shadow-[#343a40] rounded-md uppercase bg-white text-black text-center font-semibold px-7 py-4 border-0
   }
 
 }

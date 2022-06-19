@@ -12,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className='snap-y snap-mandatory h-[100vh] w-screen overflow-scroll'>
-        <Hero/>
+      <div className='snap-y snap-mandatory h-[100vh] w-screen overflow-y-scroll'>
+        <Hero />
         <div id='about' className='snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl'>1</div>
         <div id='skills' className='snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl'>2</div>
         <div id='works' className='snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl'>3</div>

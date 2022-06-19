@@ -4,11 +4,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative snap-start w-full h-full m-0 p-0 flex justify-center items-center overflow-x-hidden">
+    <div id="home" className="relative snap-start w-full h-full m-0 p-0 flex justify-center items-center z-10">
      
       {/* Background Animation */}
 
-      <div className="absolute w-screen h-full flex items-center justify-center blur-2xl z-0">
+      <div className="absolute w-screen h-full flex items-center justify-center blur-2xl z-0 overflow-hidden">
         <div className="absolute top-[50vh] left-[50vw] w-[200px] h-[200px] bg-[#A85CF9] rounded-full mix-blend-multiply opacity-40 animate-blob animation-delay-2000"></div>
         <div className="absolute top-[40vh] right-[60vw] w-[200px] h-[200px] bg-[#FF6FB5] rounded-full mix-blend-multiply opacity-40 animate-blob animation-delay-4000"></div>
         <div className="absolute top-[50vh] right-[50vw] w-[200px] h-[200px] bg-[#FCF69C] rounded-full mix-blend-multiply opacity-40 animate-blob"></div>
@@ -36,7 +36,7 @@ const Hero = () => {
         </p>
       </div> */}
 
-      <button className="w-50 h-12 mb-10 text-center flex items-center self-end animate-bounce bg-white text-black opacity-50  hover:shadow-gray-500/100 hover:opacity-70 transition duration-300">
+      <button className="w-50 h-12 mb-10 self-end animate-bounce opacity-50  hover:shadow-gray-500/100 hover:opacity-70 transition duration-300">
         <span>Let's get started &rarr;</span>
       </button>
     </div>

@@ -57,8 +57,8 @@ const Navbar = () => {
             </li>
           </Link>
         </ul>
-        <div className="flex md:hidden">
-          <HiOutlineMenu size={40} className="opacity-70 cursor-pointer" onClick={handleMenu} />
+        <div className="flex md:hidden" onClick={handleMenu}>
+          <HiOutlineMenu size={40} className="opacity-70 cursor-pointer" />
         </div>
       </nav>
       <div className={isMenuDisplay ? "fixed md:hidden left-0 top-0 w-full h-screen bg-white/30 z-50 trasnsition-all duration-500" : "trasnsition-all duration-500"}>

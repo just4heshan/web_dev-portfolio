@@ -4,6 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      cap:['Capriola', 'sans-serif'],
+      pop:['Poppins', 'sans-serif'],
+      mono:['Major Mono Display', 'monospace'],
+    },
     extend: {
       animation: {
         blob: "blob 12s infinite",
@@ -31,7 +36,7 @@ module.exports = {
     require('tailwind-scrollbar-hide')
   ],
   variants: {
-    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    // textColor: ['responsive', 'hover', 'focus', 'group-hover'],
      },
   
 }

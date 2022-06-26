@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,19 +10,19 @@
   }
 
   body {
-    @apply w-full h-screen text-[#ffffff] bg-black scrollbar-hide overflow-x-hidden 
+    @apply w-full h-screen bg-black text-[#ffffff] overflow-x-hidden 
   }
 
-  h1, h2, h3, h4, h5, h6, p {
-    @apply font-light font-pop 
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light font-pop
   }
 
   h1 {
-    @apply text-5xl md:text-6xl 
+    @apply text-6xl md:text-7xl 
   }
 
   h2 {
-    @apply text-4xl md:text-4xl
+    @apply text-2xl md:text-4xl 
   }
 
   h3 {
@@ -46,11 +47,15 @@
 
 
   button {
-    @apply flex items-center shadow-xl shadow-[#343a40] rounded-md uppercase bg-white text-black text-center font-semibold px-7 py-4 border-0
+    @apply flex items-center shadow-xl shadow-[#343a40] rounded-md uppercase bg-[#ffffff] text-black text-center font-semibold px-7 py-4 border-0
   }
 
   .center {
     @apply flex justify-center items-center
+  }
+
+  .showBorder {
+    @apply border-b-2 border-white
   }
 
 }

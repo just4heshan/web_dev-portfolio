@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative snap-start w-full h-full m-0 p-10 md:p-30 flex justify-center items-center"
+      className="relative snap-start exact w-full h-full m-0 p-10 md:p-30 flex justify-center items-center"
     >
       <div className="absolute w-full h-full top-0 left-0 m-0 p-0 z-1 bg-gradient-to-bl from-pinkLight/10 via-pinkDark/10 via-purpleLight/10 via-purpleMid/10 via-purpleDark/10 via-purpleExtraDark/10 via-blueExtraDark/10 via-blueDark/10 to-blueLight/10"></div>
       {/* Background Animation */}

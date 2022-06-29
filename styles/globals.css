@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply w-full h-screen bg-black text-[#ffffff] overflow-x-hidden 
+    @apply w-full h-screen bg-black text-[#ffffff] overflow-x-hidden selection:bg-white/10 selection:text-black
   }
 
   h1, h2, h3, h4, h5, h6 {

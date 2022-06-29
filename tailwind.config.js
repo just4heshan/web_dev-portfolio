@@ -15,6 +15,8 @@ module.exports = {
       'blueDark': '#4361ee',
       'blueLight': '#4895ef',
       'blueExtraLight': '#4cc9f0',
+      'green': '#FF715B',
+      'greenDark': '#20BF55',
       'black': '#000000',
       'white': '#ffffff',
 
@@ -25,6 +27,9 @@ module.exports = {
       mono:['Major Mono Display', 'monospace'],
     },
     extend: {
+      content: {
+        quote: 'Hello',
+      },
       animation: {
         blob: "blob 12s infinite",
         circular: " circular 12s infinite",
@@ -63,7 +68,7 @@ module.exports = {
     require('tailwind-scrollbar-hide'),
   ],
   variants: {
-    // textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
      },
   
 }

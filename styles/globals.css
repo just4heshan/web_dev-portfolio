@@ -47,7 +47,7 @@
 
 
   button {
-    @apply flex items-center shadow-xl shadow-[#343a40] rounded-md uppercase bg-[#ffffff] text-black text-center font-semibold px-7 py-4 border-0
+    @apply flex items-center shadow-sm shadow-pinkLight/40 rounded-md uppercase text-white text-center font-semibold px-7 py-4 border-0
   }
 
   .center {

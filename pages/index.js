@@ -7,6 +7,7 @@ import About from "./About";
 import Skills from "./skills";
 import Works from "./Works";
 import Contact from "./Contact";
+import Sidebar from "../components/Sidebar/Sidebar";
 
 
 export default function Home() {
@@ -30,31 +31,17 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <div className="scrollbar-hide snap-x snap-mandatory h-[100vh] w-screen overflow-y-scroll">
-        <Hero />
-        <About />
+      <Sidebar />
+      <Hero/>
+      <div 
+      className="
+      h-[full] w-screen 
+      overflow-y-scroll scrollbar-hide ">
+        
+        {/* <About />
         <Skills />
         <Works />
-        <Contact />
-        {/* <div id='about' className='snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl'>1</div> */}
-        {/* <div
-          id="skills"
-          className="snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl"
-        >
-          2
-        </div> */}
-        {/* <div
-          id="works"
-          className="snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl"
-        >
-          3
-        </div> */}
-        {/* <div
-          id="contact"
-          className="snap-start bg-black-200 w-screen h-full flex items-center justify-center text-8xl"
-        >
-          4
-        </div> */}
+        <Contact /> */}
       </div>
     </div>
   );

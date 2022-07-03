@@ -28,7 +28,7 @@ module.exports = {
     },
     extend: {
       content: {
-        quote: 'Hello',
+        quote: 'About',
       },
       animation: {
         blob: "blob 12s infinite",

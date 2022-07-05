@@ -19,6 +19,7 @@ module.exports = {
       'greenDark': '#20BF55',
       'black': '#000000',
       'white': '#ffffff',
+      'gray': '#e7eeed',
 
     },
     fontFamily: {
@@ -28,11 +29,11 @@ module.exports = {
     },
     extend: {
       content: {
-        quote: 'About',
+        quote: 'Heshan Rathnayake',
       },
       animation: {
         blob: "blob 12s infinite",
-        circular: " circular 12s infinite",
+        circular: " circular 6s infinite",
       },
       keyframes: {
         blob: {
@@ -52,13 +53,13 @@ module.exports = {
         },
         circular: {
           "0%": {
-            transform: "scale(0)"
-          },
-          "50%": {
             transform: "scale(1)"
           },
+          "50%": {
+            transform: "scale(1.5)"
+          },
           "100%": {
-            transform: "scale(0)"
+            transform: "scale(1)"
           },
         }
       }

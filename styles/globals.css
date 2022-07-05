@@ -6,11 +6,11 @@
 
 @layer base {
   html {
-    @apply font-cap
+    @apply font-cap overflow-x-hidden
   }
 
   body {
-    @apply w-full h-screen bg-black text-[#ffffff] overflow-x-hidden selection:bg-white/10 selection:text-black
+    @apply w-screen h-screen bg-greenDark text-[#ffffff] overflow-x-hidden selection:bg-white/10 selection:text-black
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -18,7 +18,7 @@
   }
 
   h1 {
-    @apply text-6xl md:text-7xl 
+    @apply text-4xl md:text-5xl lg:text-7xl 
   }
 
   h2 {
@@ -47,7 +47,7 @@
 
 
   button {
-    @apply flex items-center shadow-sm shadow-pinkLight/40 rounded-md uppercase text-white text-center font-semibold px-7 py-4 border-0
+    @apply rounded-full uppercase text-greenDark/80 text-center font-semibold shadow-sm shadow-white/70 
   }
 
   .center {

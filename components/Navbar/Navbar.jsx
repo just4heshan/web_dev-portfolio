@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div>
-    <div className="fixed w-full h-20 shadow-xl z-50">
+    <div className="fixed w-screen h-20 shadow-xl z-50">
       <nav
         className=" w-full h-full flex justify-between items-center px-3 md:px-24 2xl:px-96.
        py-6 2xl:px-15 bg-gradient-to-r from-black/10 to-black/10"
@@ -73,7 +73,7 @@ const Navbar = () => {
               style={{
                 width: 60,
                 height: 60,
-                backgroundColor: "#000000",
+                backgroundColor: "#20BF55",
                 borderRadius: "5px",
               }}
               className="cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300]"
@@ -82,7 +82,7 @@ const Navbar = () => {
               <GrClose onClick={handleMenu}/>
             </div>
           </div>
-          <div className="w-full h-full flex flex-col justify-start pt-40 text-black text-center tracking-widest opacity-60">
+          <div className="w-full h-full flex flex-col justify-start pt-40 text-greenDark text-center tracking-widest opacity-70">
             {/* <h3 className="mb-10 font-medium">HOME</h3>
             <h3 className="mb-10 font-medium">ABOUT</h3>
             <h3 className="mb-10 font-medium">SKILLS</h3>

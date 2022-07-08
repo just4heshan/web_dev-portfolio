@@ -4,7 +4,7 @@ const AnimatedCircle = () => {
   return (
     <div 
     className="
-    absolute cursor-none z-1
+    absolute cursor-none z-10
     w-screen h-full 
     flex items-center justify-center 
     blur-2xl 

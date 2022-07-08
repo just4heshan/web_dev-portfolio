@@ -5,21 +5,33 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'pinkLight': '#f72585',
-      'pinkDark': '#b5179e',
-      'purpleLight': '#7209b7',
-      'purpleMid': '#560bad',
-      'purpleDark': '#480ca8',
-      'purpleExtraDark': '#3a0ca3',
-      'blueExtraDark': '#3f37c9',
-      'blueDark': '#4361ee',
-      'blueLight': '#4895ef',
-      'blueExtraLight': '#4cc9f0',
-      'green': '#FF715B',
-      'greenDark': '#20BF55',
+      'greenExtraDark': '#39b89a',
+      'greenDark': '#A084CF',
+      'greenLight': '#79d3be',
+      'greenExtraLight': '#b9eee1',
+      'blueDark': '#007bff',
+      'blueLight': '#0091f7',
+      'blueExtraLight': '#00a7ef',
+      'peachDark': '#FF5D5D',
+      'peachLight': '#FF8C8C',
+      'peachExtraLight': '#FFC3C3',
+      'redLight': '#fec9d7',
+      'redExtraLight': '#4cc9f0',
       'black': '#000000',
       'white': '#ffffff',
       'gray': '#e7eeed',
+      'meroon': '#006466',
+      'meroon0': '#065a60',
+      'meroon1': '#0b525b',
+      'meroon2': '#144552',
+      'meroon3': '#1b3a4b',
+      'meroon4': '#212f45',
+      'meroon5': '#272640',
+      'meroon6': '#312244',
+      'meroon7': '#3e1f47',
+      'meroon8': '#4d194d',
+
+
 
     },
     fontFamily: {
@@ -28,6 +40,12 @@ module.exports = {
       mono:['Major Mono Display', 'monospace'],
     },
     extend: {
+      skew: {
+        '10': '10deg',
+      },
+      rotate: {
+        '8': '8deg',
+      },
       content: {
         quote: 'Heshan Rathnayake',
       },

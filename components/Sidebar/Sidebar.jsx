@@ -12,7 +12,7 @@ const Sidebar = () => {
         <li href="https://github.com/just4heshan">
           <AiFillGithub
             size={40}
-            className="cursor-pointer mt-5 mb-8 text-white/70 hover:text-white transition-all duration-400 "
+            className="cursor-pointer mt-5 mb-8 text-white/70 stroke-peachDark hover:text-white transition-all duration-400 "
           />
         </li>
         <li href="https://www.linkedin.com/in/heshan-rathnayake/">

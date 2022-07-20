@@ -52,6 +52,7 @@ module.exports = {
       animation: {
         blob: "blob 12s infinite",
         circular: " circular 6s infinite",
+        fontAnim: "fontAnim 6s infinite"
       },
       keyframes: {
         blob: {
@@ -79,7 +80,28 @@ module.exports = {
           "100%": {
             transform: "scale(1)"
           },
-        }
+        },
+        fontAnim: {
+          "0": {
+            transform: "scale(1)"
+          },
+          "20": {
+            transform: "scale(1.1)"
+          },
+          "40": {
+            transform: "scale(1.3)"
+          },
+          "60": {
+            transform: "scale(1.5)"
+          },
+          "80": {
+            transform: "scale(1.2)"
+          },
+          "100": {
+            transform: "scale(1)"
+          }
+          
+        },
       }
     },
   },

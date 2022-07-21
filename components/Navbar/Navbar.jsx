@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-import Lottie from "react-lottie-player";
-import Link from "next/link";
 
-import { HiOutlineMenu } from "react-icons/hi";
-import { GrClose } from "react-icons/gr";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 
-// import {logo} from './logo1.png';logo
 
 const Navbar = () => {
   const links = ["about", "skills", "works", "contact"];
@@ -22,8 +17,7 @@ const Navbar = () => {
     <div>
       <div className="fixed w-screen h-[9vh] shadow-xl z-50 hover:bg-gradient-to-tr from-black/20 to-white/10">
         <nav
-          className=" w-full h-full flex justify-between items-center px-3 md:px-24 2xl:px-96.
-       py-6 2xl:px-15"
+          className=" w-full h-full flex justify-between items-center px-3 md:px-24 2xl:px-96 py-6 2xl:px-15"
         >
           {/* Navbar Logo */}
           <img
@@ -62,54 +56,18 @@ const Navbar = () => {
           className={
             isMenuDisplay
               ? "fixed md:hidden left-0 top-0 w-screen h-screen bg-white/30 z-100 trasnsition-all duration-100 ease-in-out"
-              : "trasnsition-all duration-100"
+              : "trasnsition-all duration-500 delay-200"
           }
         >
           <div
             className={
               isMenuDisplay
-                ? "fixed right-0 top-0 w-[80%] h-screen flex justify-center items-center  bg-white px-6 py-32 ease-in-out duration-100 delay-75 z-200"
-                : "fixed right-[-100%] top-0 w-[80%] sm:w-[60%] h-screen bg-slate-50 p-5 ease-in-out duration-500 z-0"
+                ? "fixed right-0 top-0 w-[80%] h-screen flex justify-center items-center  bg-white px-6 py-32 ease-in-out duration-500  z-200"
+                : "fixed right-[-100%] top-0 w-[80%] h-screen bg-white p-5 ease-in-out duration-500 z-0"
             }
           >
-            {/* <img
-              src="./logoLarge.svg"
-              className="absolute w-[1200px] top-[342px] left-[173px] pt-2 opacity-30 hover:opacity-90 transition-all duration-100 ease-in-out"
-              alt="Logo"
-            /> */}
             <div className="flex flex-col w-full h-full pt-12 justify-between items-center">
-              {/* <div className="self-start">
-                <div className="cursor-pointer rounded-full shadow-lg shadow-meroon8/40 bg-gradient-to-tr from-greenExtraDark/40 to-meroon6/40 p-3">
-                  <GrClose onClick={handleMenu} className="w-4" />
-                </div>
-              </div> */}
-              {/* <div className="w-full h-full flex flex-col justify-around  text-black/70 text-center opacity-70">
-                
-              </div> */}
               <ul className="uppercase text-3xl leading-5 tracking-wide flex flex-col gap-20 text-center">
-                {/* <Link href="/#home">
-                  <li className="mb-10 hover:text-greenExtraDark/50 transition-colors ease-in-out duration-100">Home</li>
-                </Link> */}
-                {/* <Link href="/#about">
-                    <li className="mb-10  transition-colors ease-in-out duration-100">
-                      About
-                    </li>
-                  </Link>
-                  <Link href="/#skills">
-                    <li className="mb-10  transition-colors ease-in-out duration-100">
-                      Skills
-                    </li>
-                  </Link>
-                  <Link href="/#works">
-                    <li className="mb-10  transition-colors ease-in-out duration-100">
-                      Works
-                    </li>
-                  </Link>
-                  <Link href="/#contact">
-                    <li className=" transition-colors ease-in-out duration-100">
-                      Contact
-                    </li>
-                  </Link> */}
                 {links.map((link, index) => {
                   return (
                     <li id={index} className="text-black text-meroon2/80 ">
@@ -144,12 +102,6 @@ const Navbar = () => {
                     </a>
                   </li>
                 </ul>
-                {/* <div className="w-full h-full flex justify-around items-center text-black/50">
-                  <AiFillGithub size={40} />
-                  <AiFillLinkedin size={40} />
-                  <AiFillInstagram size={40} />
-                  <FaFacebook size={40} />
-                </div> */}
               </div>
             </div>
           </div>

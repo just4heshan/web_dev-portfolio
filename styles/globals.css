@@ -12,6 +12,13 @@
   body {
     @apply w-screen h-screen bg-none text-[#ffffff] overflow-x-hidden selection:bg-white/10 selection:text-black scrollbar-hide
   }
+  
+  @layer base {
+    @font-face {
+      font-family: 'carosello';
+      src: url("./Carosello-Regular.ttf") format("ttf");
+    }
+  }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-light font-pop

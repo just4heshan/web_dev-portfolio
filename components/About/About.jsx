@@ -3,6 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section 
+        id="about"
         className="
         relative
         h-screen w-screen
@@ -11,7 +12,6 @@ const About = () => {
         text-white font-pop
         flex flex-col lg:flex-row justify-center items-center">
         <div
-          id="about"
           className=" 
           z-100
           lg:flex-1 

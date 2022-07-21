@@ -18,49 +18,47 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed w-screen h-20 shadow-xl z-50">
+      <div className="fixed w-screen h-[9vh] shadow-xl z-50 hover:bg-gradient-to-tr from-black/20 to-white/10">
         <nav
           className=" w-full h-full flex justify-between items-center px-3 md:px-24 2xl:px-96.
        py-6 2xl:px-15"
         >
+          {/* Navbar Logo */}
           <img
-            src="./logoLarge.svg"            
-            className="sm:w-[90px] md:w-[120px] opacity-70 hover:opacity-90 transition-all duration-100 ease-in-out"
+            src="./logo.svg"
+            className="w-[80px] md:w-[120px] lg:w-[100px] opacity-70 hover:opacity-90 transition-all duration-100 ease-in-out"
             alt="Logo"
           />
 
-          <ul className="hidden md:flex justify-center items-center text-sm tracking-widest opacity-70 text-white mix-blend-overlay">
-            {/* <Link exact href="/#home">
-              <li className="ml-10 py-1 uppercase md:showBorder hover:border-b hover:opacity-100 transition-all duration-100 ease-in-out">
-                Home
-              </li>
-            </Link> */}
-            <Link href="/#about">
-              <li className="ml-10 py-1 uppercase hover:border-b hover:opacity-100 transition-all duration-100 ease-in-out">
-                About
-              </li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 py-1 uppercase hover:border-b hover:opacity-100 transition-all duration-100 ease-in-out">
-                Skills
-              </li>
-            </Link>
-            <Link href="/#works">
-              <li className="ml-10 py-1 uppercase hover:border-b hover:opacity-100 transition-all duration-100 ease-in-out">
-                Works
-              </li>
-            </Link>
-            <Link href="/#contact">
-              <li className="ml-10 py-1 uppercase hover:border-b hover:opacity-100 transition-all duration-100 ease-in-out">
-                Contact
-              </li>
-            </Link>
-          </ul>
+          {/* Menu List */}
+          <ul className="hidden w-[400px] h-full md:flex md:items-center justify-between text-sm font-black tracking-widest opacity-70 text-white ">
+              <Link href="/#about">
+                <li className="relative h-full flex-1 flex items-center uppercase overflow-x-hidden hover:before:flex before:absolute before:bottom-[0] before:left-[-100px] before:w-[80%] before:h-1 before:rounded-tr-sm before:rounded-br-sm before:bg-white/50  hover:before:translate-x-[100px] before:trasnsition-all before:duration-200  transition-all duration-100 ease-linear">
+                  About
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li className="relative h-full flex-1 flex items-center uppercase overflow-x-hidden hover:before:flex before:absolute before:bottom-[0] before:left-[-100px] before:w-[80%] before:h-1 before:rounded-tr-sm before:rounded-br-sm before:bg-white/50  hover:before:translate-x-[100px] before:trasnsition-all before:duration-200  transition-all duration-100 ease-linear">
+                  Skills
+                </li>
+              </Link>
+              <Link href="/#works">
+                <li className="relative h-full flex-1 flex items-center uppercase overflow-x-hidden hover:before:flex before:absolute before:bottom-[0] before:left-[-100px] before:w-[80%] before:h-1 before:rounded-tr-sm before:rounded-br-sm before:bg-white/50  hover:before:translate-x-[100px] before:trasnsition-all before:duration-200  transition-all duration-100 ease-linear">
+                  Works
+                </li>
+              </Link>
+              <Link href="/#contact">
+                <li className="relative h-full flex-1 flex items-center uppercase overflow-x-hidden hover:before:flex before:absolute before:bottom-[0] before:left-[-100px] before:w-[80%] before:h-1 before:rounded-tr-sm before:rounded-br-sm before:bg-white/50  hover:before:translate-x-[100px] before:trasnsition-all before:duration-200  transition-all duration-100 ease-linear">
+                  Contact
+                </li>
+              </Link>
+            </ul>
+
+          {/* Hamburger Menu Icon  */}
           <div
-            className="z-200 flex flex-col gap-1 pr-3 group-hover:first:last:bg-peachDark md:hidden"
+            className="z-200 flex flex-col gap-1 pr-4 group-hover:first:last:bg-peachDark md:hidden"
             onClick={handleMenu}
           >
-            {/* <HiOutlineMenu size={40} className="opacity-70 cursor-pointer" /> */}
             <span className="menu-span w-[30px] h-[5px] bg-greenExtraDark rounded-md opacity-70"></span>
             <span className="menu-span w-[30px] h-[5px] bg-greenExtraDark rounded-md opacity-70"></span>
             <span className="menu-span w-[30px] h-[5px] bg-greenExtraDark rounded-md opacity-70"></span>
@@ -78,36 +76,47 @@ const Navbar = () => {
           <div
             className={
               isMenuDisplay
-                ? "fixed right-0 top-0 w-[80%] h-screen bg-white p-5 ease-in-out duration-300 z-200"
+                ? "fixed right-0 top-0 w-[80%] sm:w-[60%] h-screen bg-white p-5 ease-in-out duration-300 delay-75 z-200"
                 : "fixed right-[-100%] top-0 w-[80%] sm:w-[60%] h-screen bg-slate-50 p-5 ease-in-out duration-500 z-0"
             }
           >
-           
-
+            <img
+              src="./logoLarge.svg"
+              className="absolute w-[500px] top-[342px] left-[173px] pt-2 opacity-30 hover:opacity-90 transition-all duration-100 ease-in-out"
+              alt="Logo"
+            />
             <div className="relative flex flex-col justify-between gap-[200px]">
-            <div className="flex justify-start items-center">
-              <div className="cursor-pointer rounded-full shadow-lg shadow-gray-400 p-3">
-                <GrClose onClick={handleMenu} />
+              <div className="flex justify-start items-center">
+                <div className="cursor-pointer rounded-full shadow-lg shadow-gray-400 p-3">
+                  <GrClose onClick={handleMenu} />
+                </div>
               </div>
-            </div>
-            <div className="w-full h-full flex flex-col justify-around  text-black/70 text-center opacity-70">
-              <ul className="uppercase text-3xl font-medium leading-5 tracking-wide flex flex-col gap-3">
-                {/* <Link href="/#home">
+              <div className="w-full h-full flex flex-col justify-around  text-black/70 text-center opacity-70">
+                <ul className="uppercase text-3xl font-medium leading-5 tracking-wide flex flex-col gap-3">
+                  {/* <Link href="/#home">
                   <li className="mb-10 hover:text-greenExtraDark/50 transition-colors ease-in-out duration-100">Home</li>
                 </Link> */}
-                <Link href="/#about">
-                  <li className="mb-10  transition-colors ease-in-out duration-100">About</li>
-                </Link>
-                <Link href="/#skills">
-                  <li className="mb-10  transition-colors ease-in-out duration-100">Skills</li>
-                </Link>
-                <Link href="/#works">
-                  <li className="mb-10  transition-colors ease-in-out duration-100">Works</li>
-                </Link>
-                <Link href="/#contact">
-                  <li className=" transition-colors ease-in-out duration-100">Contact</li>
-                </Link>
-              </ul>
+                  <Link href="/#about">
+                    <li className="mb-10  transition-colors ease-in-out duration-100">
+                      About
+                    </li>
+                  </Link>
+                  <Link href="/#skills">
+                    <li className="mb-10  transition-colors ease-in-out duration-100">
+                      Skills
+                    </li>
+                  </Link>
+                  <Link href="/#works">
+                    <li className="mb-10  transition-colors ease-in-out duration-100">
+                      Works
+                    </li>
+                  </Link>
+                  <Link href="/#contact">
+                    <li className=" transition-colors ease-in-out duration-100">
+                      Contact
+                    </li>
+                  </Link>
+                </ul>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <h3 className=" flex self-center uppercase tracking-wide text-black/70">
@@ -120,7 +129,6 @@ const Navbar = () => {
                   <FaFacebook size={40} className="cursor-pointer" />
                 </div>
               </div>
-            
             </div>
           </div>
         </div>

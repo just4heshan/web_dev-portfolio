@@ -17,7 +17,9 @@ const About = () => {
       flex flex-col  justify-center items-center  gap-5 md:gap-10 lg:flex-row 
       "
     >
-      <div id="title" className=" 
+      <div 
+      id="title" 
+      className=" 
       relative 
       lg:flex-1 
       mt-0 

@@ -51,8 +51,9 @@ module.exports = {
       },
       animation: {
         blob: "blob 12s infinite",
-        circular: " circular 6s infinite",
-        fontAnim: "fontAnim 6s infinite"
+        zoom: " zoom 6s infinite",
+        fontAnim: "fontAnim 6s infinite",
+        spin: "spin 90s infinite"
       },
       keyframes: {
         blob: {
@@ -70,7 +71,7 @@ module.exports = {
             transform: "translate(0px, 0px) scale(1)",
           }
         },
-        circular: {
+        zoom: {
           "0%": {
             transform: "scale(1)"
           },
@@ -102,8 +103,19 @@ module.exports = {
           }
           
         },
+        spin: {
+          "0": {
+            transform: "rotate(0)"
+          },
+          "50": {
+            transform: "rotate(120)"
+          },
+          "100": {
+            transform: "rotate(-120)"
+          },
       }
     },
+  },  
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
@@ -111,5 +123,4 @@ module.exports = {
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
      },
-  
 }

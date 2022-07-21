@@ -10,12 +10,10 @@ const Hero = () => {
     <div
       id="home"
       className="
-      z-[0]
       relative 
       w-screen min-h-full 
-      m-0 p-0 md:px-30 
-      flex flex-col justify-center items-center gap-0
-      antialiased
+      m-0 p-0 
+      flex flex-col justify-center items-center gap-0 scrollbar-hide
       "
     >
 

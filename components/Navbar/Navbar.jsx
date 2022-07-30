@@ -15,9 +15,9 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed w-screen h-[9vh] shadow-xl z-50 hover:bg-gradient-to-tr from-black/20 to-white/10">
+      <div className="fixed w-screen h-[10vh] shadow-xl z-50 hover:bg-gradient-to-tr from-black/20 to-white/10">
         <nav
-          className=" w-full h-full flex justify-between items-center px-3 md:px-24 2xl:px-96 py-6 2xl:px-15"
+          className=" w-full h-full flex justify-between items-center px-2 md:px-24 2xl:px-96 py-6 2xl:px-15"
         >
           {/* Navbar Logo */}
           <img
@@ -27,7 +27,7 @@ const Navbar = () => {
           />
 
           {/* Menu List */}
-          <ul className="hidden w-[400px] h-[9vh] md:flex md:items-center justify-between text-sm font-black tracking-widest text-white/80 ">
+          <ul className="hidden w-[400px] h-[9vh] md:flex md:items-center justify-between text-sm font-black tracking-widest text-white/60 ">
             {links.map((link, index) => {
               return (
                 <li
@@ -45,9 +45,9 @@ const Navbar = () => {
             className="z-[200] flex flex-col gap-1 pr-4 group-hover:first:last:bg-peachDark md:hidden"
             onClick={handleMenu}
           >
-            <span className="menu-span w-[30px] h-[5px] bg-greenExtraDark rounded-md opacity-70"></span>
-            <span className="menu-span w-[30px] h-[5px] bg-greenExtraDark rounded-md opacity-70"></span>
-            <span className="menu-span w-[30px] h-[5px] bg-greenExtraDark rounded-md opacity-70"></span>
+            <span className="menu-span w-[30px] h-[5px] bg-meroon rounded-md opacity-70 border-black/30 border-[1px]"></span>
+            <span className="menu-span w-[30px] h-[5px] bg-meroon rounded-md opacity-70 border-black/30 border-[1px]"></span>
+            <span className="menu-span w-[30px] h-[5px] bg-meroon rounded-md opacity-70 border-black/30 border-[1px]"></span>
           </div>
         </nav>
 
@@ -67,20 +67,20 @@ const Navbar = () => {
             }
           >
             <div className="flex flex-col w-full h-full pt-12 justify-between items-center">
-              <ul className="uppercase text-3xl leading-5 tracking-wide flex flex-col gap-20 text-center">
+              <ul className="uppercase text-3xl leading-5 tracking-wide flex flex-col gap-16 text-center">
                 {links.map((link, index) => {
                   return (
-                    <li id={index} className="text-black text-meroon2/80 ">
+                    <li id={index} className="text-black text-meroon/70 ">
                       <a href="#">{link}</a>
                     </li>
                   );
                 })}
               </ul>
               <div className="flex flex-col items-center gap-2">
-                <h3 className="uppercase tracking-wide text-meroon7/90">
+                <h3 className="uppercase tracking-wide text-meroon/70">
                   Let's Connect
                 </h3>
-                <ul className="w-full h-full flex gap-6 text-meroon7/50">
+                <ul className="w-full h-full flex gap-6 text-meroon/50">
                   <li>
                     <a href="#">
                       <AiFillGithub size={40} className="cursor-pointer" />

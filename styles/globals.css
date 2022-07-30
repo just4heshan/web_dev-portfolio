@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    @apply font-cap overflow-x-hidden
+    @apply font-cap overflow-x-hidden block
   }
 
   body {

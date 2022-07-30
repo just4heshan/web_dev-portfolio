@@ -38,6 +38,7 @@ module.exports = {
       cap:['Capriola', 'sans-serif'],
       pop:['Poppins', 'sans-serif'],
       mono:['Major Mono Display', 'monospace'],
+      mochiy:['Mochiy Pop One', 'sans-serif'],
     },
     extend: {
       skew: {
@@ -51,9 +52,19 @@ module.exports = {
       },
       animation: {
         blob: "blob 12s infinite",
-        zoom: " zoom 6s infinite",
+        zoom: " zoom 1.8s linear",
         fontAnim: "fontAnim 6s infinite",
-        spin: "spin 90s infinite"
+        spin: "spin 90s infinite",
+        intro1: "intro 23.8s linear infinite",
+        intro2: "intro 17.0s linear infinite",
+        intro3: "intro 22.6s linear infinite",
+        intro4: "intro 19.4s linear infinite",
+        intro5: "intro 24.0s linear infinite",
+        intro6: "intro 29.8s linear infinite",
+        intro7: "intro 21.0s linear infinite",
+        intro8: "intro 22.6s linear infinite",
+        intro9: "intro 19.4s linear infinite",
+        intro10: "intro 24.0s linear infinite",
       },
       keyframes: {
         blob: {
@@ -73,13 +84,19 @@ module.exports = {
         },
         zoom: {
           "0%": {
-            transform: "scale(1)"
+            transform: "scale(1) rotate(0)"
+          },
+          "25%": {
+            transform: "scale(1.2) rotate(-270deg)"
           },
           "50%": {
-            transform: "scale(1.5)"
+            transform: "scale(1.4) rotate(-270deg)"
+          },
+          "75%": {
+            transform: "scale(1.8) rotate(-270deg)"
           },
           "100%": {
-            transform: "scale(1)"
+            transform: "scale(2.0) rotate(-270deg)"
           },
         },
         fontAnim: {
@@ -113,7 +130,21 @@ module.exports = {
           "100": {
             transform: "rotate(-120)"
           },
-      }
+        },
+        intro: {
+          "0%": {
+            transform: "translate(-100vw, 0)",
+          },
+          "33%": {
+            transform: "translate(-50vw, 0)",
+          },
+          "66%": {
+            transform: "translate(0vw, 0)",
+          },
+          "100%": {
+            transform: "translate(100vw, 0)",
+          },
+        },
     },
   },  
   },

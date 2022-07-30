@@ -9,14 +9,15 @@ const About = () => {
       id="about"
       className="
       relative 
-      snap-start 
       w-screen h-screen 
-      m-0 p-10 md:p-24 
+      m-0 p-0
       font-pop 
-      bg-gradient-to-tr from-blueDark via-blueExtraLight to-blueDark
-      flex flex-col  justify-center items-center  gap-5 md:gap-10 lg:flex-row 
+      bg-meroon/60
+      flex justify-center items-center
       "
     >
+      {/* Wrapper  */}
+      <div className="w-full h-full">
       <div 
       id="title" 
       className=" 
@@ -26,11 +27,11 @@ const About = () => {
       text-7xl md:text-[6rem] font-[300] 
       opacity-90     
       cursor-pointer 
-      hover:before:content-['About'] before:absolute before:z-auto before:text-pinkDark before:h-[3.5em] before:overflow-hidden before:transition-transform before:ease-in-out before:duration-700 
+      hover:before:content-['About'] before:absolute before:text-pinkDark  before:overflow-hidden before:transition transform before:ease-in-out before:duration-700 
       hover:after:content-['About'] after:absolute after:top-[48px] after:left-0 after:z-auto after:text-blueExtraDark after:leading-[0] after:h-[3em] after:overflow-hidden after:transition-all after:duration-700">
         About
       </div>
-      <div className=" lg:flex-2 text-2xl md:text-4xl md:text-left md:leading-[50px] md:pl-24 font-[100] text-center tracking-wider font-[200]">
+      <div className=" lg:flex-2 text-2xl md:text-4xl md:text-left md:leading-[50px] md:pl-24 font-[100] text-center tracking-wider">
         <p>
           Hi there I am Heshan Rathnayake. I and have been used and developed
           numourous web applications with used HTML, CSS, JavaScript, React JS,
@@ -62,6 +63,7 @@ const About = () => {
             className="cursor-pointer mb-5 text-white/70 hover:text-white transition-all duration-400 "
           />
         </a>
+      </div>
       </div>
     </div>
   );

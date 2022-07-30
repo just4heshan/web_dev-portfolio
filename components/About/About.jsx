@@ -7,7 +7,7 @@ const About = () => {
         className="
         relative
         h-screen w-screen
-        bg-meroon8/70
+        bg-meroon/60
         m-0 p-4 lg:px-40 md:py-20
         text-white font-pop
         flex flex-col lg:flex-row justify-center items-center">
